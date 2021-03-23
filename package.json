@@ -17,7 +17,7 @@
     "eslint:src": "eslint ./src ./examples ./*.js",
     "commitmsg": "commitlint -e",
     "precommit": "lint-staged",
-    "prepublish": "npm run build && npm run test:umd && npm run test:es",
+    "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "logo": "cd logo && sketchtool export artboards logo.sketch",
     "imagemin": "imagemin --out-dir=logo --plugin=pngquant --plugin=svgo",
